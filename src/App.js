@@ -12,7 +12,6 @@ function App() {
     <div>
     <BrowserRouter>
     <Routes>
-   
         <Route path='/' element={ <LandingPage/> } />
         <Route path='/view' element={ <ShowPosts/> } />       
         <Route path='/post' element={ <AddNewPost/> } />

@@ -5,5 +5,13 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/dashboard"
   status = 200
+  force = false
+  query = {path = ":path"} # apply this rule for /?path=example
+  conditions = {Role = ["admin"]}
+      
+[[redirects]]
+  from = "/*"
+  to = "/login"
+  status = 302

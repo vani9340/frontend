@@ -17,7 +17,7 @@ const Card = ({postdetails:{username,address,likes,filename,description,date}}) 
                 <div className='series-btn-child'></div>
             </div>
         
-       <img alt="images" src={`http://localhost:8080/uploads/${filename}`} className="photo"/>
+       <img alt="images" src={`https://insta-clone-abow.onrender.com/uploads/${filename}`} className="photo"/>
                 <div>
                 <img className='heart-image' alt="heart" src={require("../Layout/Logos/heart.png")} onClick={()=>increaseLike()}/>
                 <span><img className='heart-image' alt="logo" src={require("../Layout/Logos/share.png")}/></span>

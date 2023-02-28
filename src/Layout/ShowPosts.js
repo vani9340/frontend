@@ -6,7 +6,7 @@ export const ShowPosts = () =>{
     const [serverResponse,setServerResponse] = useState(null)
    
     const fetchAllPosts = async() => {
-        const resp = await fetch('https://insta-clone-abow.onrender.com/all')
+        const resp = await fetch('https://localhost:8080/all')
         .then(response =>{
             response.json()
             .then(posts=>{

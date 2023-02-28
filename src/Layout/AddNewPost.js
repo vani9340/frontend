@@ -23,7 +23,7 @@ const uploadPost =()=>{
 
 
 console.log(formData)
-  fetch("https://localhost:8080/api",{
+  fetch("https://instacloneapp-r3v4.onrender.com/api",{
     method:'POST',
     body: formData
   })

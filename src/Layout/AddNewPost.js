@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "./navbar";
+// import Navbar from "./navbar";
 import {Link} from 'react-router-dom';
 // import ViewPost from "./ViewPost";
 function AddNewPost(){
@@ -23,14 +23,14 @@ const uploadPost =()=>{
 
 
 console.log(formData)
-  fetch("https://instacloneapp-r3v4.onrender.com/api",{
+  fetch("http://localhost:8080/api",{
     method:'POST',
     body: formData
   })
 }
     return(
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <div style={{height:"250px",width:"450px"}} className="form">
         <form>
         <div className="inside-form">
